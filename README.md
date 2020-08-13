@@ -10,6 +10,6 @@ The activation function is also custom, where we say 0.3 - 0.8 is NDVI value for
 
 # To run the code
 
-Start with understanding Model1.py
+Start with Model1.py
 
 
