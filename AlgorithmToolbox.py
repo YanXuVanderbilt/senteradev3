@@ -1,5 +1,6 @@
 from shapely.geometry import Point, Polygon
 
+
 def within_triangle(low, high, queryPoint):
     origin = Point([0,0,0])
     p1 = Point(low)
