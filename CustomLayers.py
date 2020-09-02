@@ -1,8 +1,6 @@
 import torch
 from torch import tensor
 
-
-
 class NDVILayer(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input: tensor) -> tensor:
