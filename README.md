@@ -8,7 +8,7 @@ After fc1, the NN has a custom layer inheritted from nn.Module (we are using PyT
 
 The activation function is also custom, where we say 0.3 - 0.8 is NDVI value for healthy. 
 
-# To run the code
+## To run the code
 
 Start with Model1.py
 
