@@ -1,15 +1,21 @@
 # senteradev3
 
-This is about estimating the calibration matrix for sentera via a neural network. 
+The goal of this project is to evaluate the healthiness of plants in a given tuple of pictures. In each tuple there will be one RGB picture and one NIR picture.
 
-Sentera produces two images for each scene, RGB and NIR, 6 channels in total. So input for the NN has dim 6. The output of first linear layer should be the 2 values we use to calculate NDVI, i.e. (NIR - RGB) / (NIR + RGB). So first layer is a (6, 2).
+## Project History
 
-After fc1, the NN has a custom layer inheritted from nn.Module (we are using PyTorch) which is based on NDVI. 
+The project originates from an idea to use Hololens for plant health detection. The complexity of that idea however, was beyond expectation. The project was thus reduced to a purely computer based evalution of plant health. 
 
-The activation function is also custom, where we say 0.3 - 0.8 is NDVI value for healthy. 
+## Technical Challenges
 
-## To run the code
+The NDVI index, which is the index used in this project to evaluate healthiness of plants. The NDVI index was used primarily in remote sensing. It's effectiveness in near field sensing was not proven. 
 
-Start with Model1.py
+## Technical Solutions
+
+This project applied a neural network to find an optimal function that resembles the NDVI function for near field sensing. 
+
+## Running
+
+python Model1.py
 
 
